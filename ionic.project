@@ -1,0 +1,5 @@
+{
+  "name": "ionicMaps",
+  "app_id": "",
+  "gulpStartupTasks": ["sass", "watch"]
+}
