@@ -1,20 +1,19 @@
-angular.module('starter.controllers', [])
-
-.controller('DashCtrl', function($scope) {})
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
+angular.module('ionicMaps.controllers', []).controller('MapCtrl', [
+  '$scope', function($scope) {
+    var initialize;
+    initialize = function() {
+      var map, mapOptions;
+      mapOptions = {
+        center: new google.maps.LatLng(30.266608, -97.743359),
+        zoom: 14,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      $scope.map = map;
+      return map.data.loadGeoJson('./data/coa_parks.json');
+    };
+    return google.maps.event.addDomListener(window, 'load', initialize);
   }
-})
+]);
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
+//# sourceMappingURL=maps/controllers.js.map

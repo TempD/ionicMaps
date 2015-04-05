@@ -3,9 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/gulp-jshint/node_modules/jshint/src/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/platforms" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="ionicMaps node_modules" level="project" />
+    <orderEntry type="library" name="ionicMaps node_modules/bower lib" level="project" />
   </component>
 </module>

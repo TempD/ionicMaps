@@ -1,5 +1,5 @@
 {
-  "name": "ionicMaps",
-  "app_id": "",
-  "gulpStartupTasks": ["sass", "watch"]
-}
+   "name": "ionicMaps",
+   "app_id": "",
+   "gulpStartupTasks": ["scripts", "sass",  "watch"]
+ }
