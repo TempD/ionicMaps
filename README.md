@@ -16,7 +16,7 @@ __ionicMaps Stack:__
 Currently the app loads with a GeoJSON layer of all of the parks reported by the City of Austin. As I continue with this project, I'd like to give the user the option to select from various data layers.
 
 ## Setup
-Currently, the [.gitignore file](https://github.com/TempD/ionicMaps/blob/master/.gitignore) is setup so that no js or dependencies are included when you clone the project therefore, there are some commands to run for setup: 
+Currently, the [.gitignore file](https://github.com/TempD/ionicMaps/blob/master/.gitignore) is setup so that no js or dependencies are included when you clone the project so there are some commands to run for setup: 
 
 __Setup Node Dependencies:__
 ```bash
